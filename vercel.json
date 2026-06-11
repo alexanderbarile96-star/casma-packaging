@@ -1,14 +1,7 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    { "source": "/shop", "destination": "/shop.html", "permanent": false },
-    { "source": "/about", "destination": "/about.html", "permanent": false },
-    { "source": "/contact", "destination": "/contact.html", "permanent": false },
-    { "source": "/terms", "destination": "/terms.html", "permanent": false },
-    { "source": "/returns", "destination": "/returns.html", "permanent": false }
-  ],
-  "headers": [
+"headers": [
     {
       "source": "/(.*)",
       "headers": [
