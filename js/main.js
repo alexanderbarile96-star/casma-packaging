@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileOverlay) mobileOverlay.addEventListener('click', closeNav);
 
   // --- Active nav link ---
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-links a, .mobile-drawer a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
+  const seg = (window.location.pathname.split('/')[1] || '').replace(/\.html$/, '');
+  const currentPath = seg === 'index' ? '' : seg;
+  document.querySelectorAll('.nav-links a, .mobile-drawer a:not(.btn)').forEach(link => {
+    const href = (link.getAttribute('href') || '').replace(/^\//, '').replace(/\.html$/, '').split(/[?#]/)[0];
+    const key = href === 'index' ? '' : href;
+    link.classList.toggle('active', key === currentPath || (currentPath === 'cart' && key === 'shop'));
   });
 
   // --- Contact form ---
