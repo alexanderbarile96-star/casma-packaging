@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop — Casma Beekeeping &amp; Packaging</title>
-  <meta name="description" content="Shop glass jars, plastic bottles, PP tubs, food grade buckets and metal closures online. Sold by the carton, WA-based." />
+  <title>Product — Casma Beekeeping &amp; Packaging</title>
+  <meta name="description" content="Casma Packaging product details." />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/store.css" />
   <link rel="icon" type="image/png" href="/images/favicon.png" />
@@ -53,81 +53,11 @@
     </div>
   </div>
 
-  <!-- Page Hero -->
-  <section class="page-hero page-hero-slim">
+  <section class="section product-section">
     <div class="container">
-      <p class="eyebrow" style="color:rgba(255,255,255,0.6)">Online Store</p>
-      <h1>Shop Casma</h1>
-      <p>Glass jars, bottles, tubs, buckets and closures &mdash; sold by the carton, delivered from Wangara.</p>
-    </div>
-  </section>
-
-  <div class="trade-bar">
-    <div class="container">
-      <span>Trade customer? Wholesale pricing and credit accounts are available.</span>
-      <a href="https://supplywise.com.au/casmapackaging/wholesale" target="_blank" rel="noopener">Wholesale login &rarr;</a>
-    </div>
-  </div>
-
-  <section class="section shop-section">
-    <div class="container">
-      <div class="shop-toolbar">
-        <div class="shop-cats" id="shopCats" role="tablist" aria-label="Categories"></div>
-        <div class="shop-controls">
-          <input type="search" id="shopSearch" class="shop-search" placeholder="Search products&hellip;" aria-label="Search products" />
-          <select id="shopSort" class="shop-sort" aria-label="Sort">
-            <option value="featured">Featured</option>
-            <option value="price-asc">Price: low to high</option>
-            <option value="price-desc">Price: high to low</option>
-            <option value="name">Name: A&ndash;Z</option>
-          </select>
-        </div>
-      </div>
-      <p class="shop-count" id="shopCount" aria-live="polite"></p>
-      <div class="sw-grid" id="productGrid">
-        <div class="store-loading">Loading products&hellip;</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section about-story" style="background:var(--white)">
-    <div class="container">
-      <div class="section-header centered" style="margin-bottom:3rem">
-        <p class="eyebrow">Good to know</p>
-        <h2>Ordering &amp; Delivery</h2>
-      </div>
-      <div class="grid-3" style="gap:2.5rem">
-        <div class="why-card">
-          <div class="why-icon">📦</div>
-          <h3>Sold by Carton</h3>
-          <p>Online orders are sold in carton or pack quantities. Carton sizes are listed on every product.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">💰</div>
-          <h3>Prices Include GST</h3>
-          <p>All listed prices include GST. Bulk and pallet pricing available — contact us for a quote.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🚚</div>
-          <h3>Delivery Options</h3>
-          <p>Same-city overnight delivery (weekdays). Road freight to eastern states available. Collect from Wangara by arrangement. Free delivery on online orders over $100.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">💳</div>
-          <h3>Payment</h3>
-          <p>Bank transfer (BSB 066167 · Acc 10564789), or VISA/Mastercard and cash in-store.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🏷️</div>
-          <h3>Promotions</h3>
-          <p>Monthly promotions available. Subscribe to our newsletter or check the shop for current deals.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🤝</div>
-          <h3>Credit Accounts</h3>
-          <p>Business credit accounts available. Apply via our contact page with three trade references.</p>
-        </div>
-      </div>
+      <nav class="breadcrumbs" id="crumbs"><a href="/shop">Shop</a></nav>
+      <div id="productRoot"><div class="store-loading">Loading product&hellip;</div></div>
+      <div id="recsRoot"></div>
     </div>
   </section>
 
@@ -176,6 +106,6 @@
 
   <script src="/js/store.js"></script>
   <script src="/js/main.js"></script>
-  <script src="/js/shop.js"></script>
+  <script src="/js/product.js"></script>
 </body>
 </html>
